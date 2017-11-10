@@ -7,8 +7,6 @@ class DeckOfCards extends Component {
 
   render() {
 
-  	const card = { front: "Front", back: "Back" };
-
     return (
   		<div className="DeckOfCards">
   			<Card flipped={this.props.flipped} />
@@ -16,7 +14,7 @@ class DeckOfCards extends Component {
 	        	<button>Prev Card</button>
 	        	<button>Next Card</button>
 	        	<button>Shuffle Deck</button>
-	        	<button onClick={() => this.props.flipCard()}>Flip Card</button>
+	        	<button onClick={this.props.flipCard}>Flip Card</button>
 	        </div>
       </div>
     );
